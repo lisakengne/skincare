@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>E-SKIN</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header sticky-top bg-white shadow-sm">
+    <!-- Top Bar -->
+    <div class="top-bar py-2 bg-light">
+        <div class="container-fluid container-xl">
+            <div class="row align-items-center">
+                <div class="col-lg-4 d-none d-lg-flex">
+                    <div class="top-bar-item text-muted small">
+                        <i class="bi bi-telephone-fill me-2 text-brown"></i>
+                        <span>Besoin d’un conseil skincare ? </span>
+                        <a href="tel:+1234567890" class="text-brown fw-semibold">+1 (234) 567-890</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="announcement-slider swiper init-swiper text-brown fw-semibold">
+                        <script type="application/json" class="swiper-config">
+                            {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": {
+                                    "delay": 4000
+                                },
+                                "slidesPerView": 1,
+                                "direction": "vertical",
+                                "effect": "slide"
+                            }
+                        </script>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">🌿 Produits 100% naturels & cruelty-free</div>
+                            <div class="swiper-slide">🚚 Livraison gratuite dès 50€</div>
+                            <div class="swiper-slide">🎁 -20% sur votre première commande</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="d-flex justify-content-end">
+                        <a href="#" class="text-brown small me-3"><i class="bi bi-globe2 me-1"></i>FR</a>
+                        <a href="#" class="text-brown small"><i class="bi bi-currency-euro me-1"></i>EUR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="container-fluid container-xl">
+            <div class="d-flex py-3 align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo d-flex align-items-center text-brown fw-bold">
+                    <!-- Exemple logo texte -->
+                    <h1 class="sitename m-0 text-brown">GlowCare</h1>
+                </a>
+
+                <!-- Search -->
+                <form class="search-form desktop-search-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control rounded-pill" placeholder="Rechercher un soin…">
+                        <button class="btn text-brown" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Actions -->
+                <div class="header-actions d-flex align-items-center justify-content-end">
+                    <!-- Compte -->
+                    <a href="" class="header-action-btn me-3 text-brown">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <!-- Wishlist -->
+                    <a href="" class="header-action-btn me-3 text-brown">
+                        <i class="bi bi-heart"></i><span class="badge bg-brown">0</span>
+                    </a>
+                    <!-- Panier -->
+                    <a href="" class="header-action-btn text-brown">
+                        <i class="bi bi-bag"></i><span class="badge bg-brown">2</span>
+                    </a>
+                    <!-- Mobile Nav -->
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list text-brown ms-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav border-top">
+        <div class="container-fluid container-xl position-relative">
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="#best-sellers">Nos Produits</a></li>
+                    <!--<li><a href="#best-sellers">Routine Beauté</a></li>-->
+                    <li><a href="#testimonials">Avis & Témoignages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="content-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="hero-title">Révélez l’éclat naturel de votre peau</h1>
+                    <p class="hero-description">Découvrez nos soins <strong>100% naturels</strong>, conçus pour
+                        hydrater, protéger et sublimer
+                        votre peau au quotidien. Une routine simple, efficace et respectueuse de votre beauté.</p>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#best-sellers" class="btn-primary">Découvrir notre gamme de soin</a>
+                    </div>
+                    <div class="features-list" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-item">
+                            <i class="bi bi-leaf me-2 text-brown"></i>
+                            <span>Ingrédients naturels</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-award text-brown"></i>
+                            <span>Livraison gratuite dès 50€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visuals">
+                <div class="product-showcase" data-aos="fade-left" data-aos-delay="200">
+                    <div class="product-card featured">
+                        <img src="assets/img/product/product-2.avif" alt="Produit vedette" class="img-fluid">
+                        <div class="product-info">
+                            <h4>Sérum Hydratant Éclat</h4>
+                            <div class="price">
+                                <span class="sale-price">29,99 €</span>
+                                <span class="original-price">39,99 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-elements">
+                    <div class="floating-icon cart" data-aos="fade-up" data-aos-delay="600">
+                        <i class="bi bi-droplet-half text-brown fs-3"></i>
+                    </div>
+                    <div class="floating-icon wishlist" data-aos="fade-up" data-aos-delay="700">
+                        <i class="bi bi-flower1 text-brown fs-3"></i>
+                    </div>
+                    <div class="floating-icon search" data-aos="fade-up" data-aos-delay="800">
+                        <i class="bi bi-sun text-brown fs-3"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Best Sellers Section -->
+    <section id="best-sellers" class="best-sellers section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Nos produits</h2>
+            <p>Découvrez nos soins les plus appréciés, choisis par nos clientes et clients pour une peau éclatante et en
+                pleine santé.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row g-5">
+
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <div class="product-badge new-badge">Nouveau</div>
+                            <img src="assets/img/product/product6.jpg" alt="Crème Hydratante Éclat" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Crème Hydratante Éclat</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(24)</span>
+                            </div>
+                            <div class="product-price">29,90 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <div class="product-badge sale-badge">-20%</div>
+                            <img src="assets/img/product/product4.jpg" alt="Sérum Anti-Âge" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Sérum Anti-Âge Réparateur</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <span class="rating-count">(38)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="old-price">39,90 €</span>
+                                <span class="current-price">31,90 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="assets/img/product/product7.jpg" alt="Gel Nettoyant Doux" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Gel Nettoyant Doux</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(12)</span>
+                            </div>
+                            <div class="product-price">15,90 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <div class="product-badge best-badge">🌸 Best Seller</div>
+                            <img src="assets/img/product/product9.jpg" alt="Masque Hydratant Intense"
+                                 class="img-fluid" loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn active"><i class="bi bi-heart-fill"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Masque Hydratant Intense</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="rating-count">(56)</span>
+                            </div>
+                            <div class="product-price">22,50 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="assets/img/product/product12.jpg" alt="Crème Nuit Réparatrice" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Crème Nuit Réparatrice</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(18)</span>
+                            </div>
+                            <div class="product-price">25,90 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <div class="product-badge sale-badge">-15%</div>
+                            <img src="assets/img/product/product5.jpg" alt="Huile Visage Éclat" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Huile Visage Éclat</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(20)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="old-price">29,90 €</span>
+                                <span class="current-price">25,40 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="assets/img/product/product11.jpg" alt="Brume Hydratante" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Brume Hydratante</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(14)</span>
+                            </div>
+                            <div class="product-price">19,90 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <div class="product-badge new-badge">Nouveau</div>
+                            <img src="assets/img/product/product14.jpg" alt="Sérum Éclat Naturel" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Sérum Éclat Naturel</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(17)</span>
+                            </div>
+                            <div class="product-price">27,50 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="assets/img/product/product8.jpg" alt="Crème Contour des Yeux" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Crème Contour des Yeux</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(21)</span>
+                            </div>
+                            <div class="product-price">32,00 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <div class="product-badge sale-badge">-10%</div>
+                            <img src="assets/img/product/product9.jpg" alt="Masque Purifiant Argile"
+                                 class="img-fluid" loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Masque Purifiant Argile</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(30)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="old-price">28,00 €</span>
+                                <span class="current-price">25,20 €</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="assets/img/product/product13.jpg" alt="Lotion Tonique Douce" class="img-fluid"
+                                 loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Lotion Tonique Douce</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(15)</span>
+                            </div>
+                            <div class="product-price">18,50 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="assets/img/product/product14.jpg" alt="Crème Réparatrice Mains"
+                                 class="img-fluid" loading="lazy">
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn compare-btn"><i class="bi bi-arrow-left-right"></i></button>
+                                <button class="action-btn quickview-btn"><i class="bi bi-zoom-in"></i></button>
+                            </div>
+                            <button class="cart-btn">Ajouter au Panier</button>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name"><a href="product-details.html">Crème Réparatrice Mains</a></h4>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i
+                                        class="bi bi-star"></i>
+                                </div>
+                                <span class="rating-count">(22)</span>
+                            </div>
+                            <div class="product-price">12,90 €</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section><!-- /Best Sellers Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                              class="purecounter text-brown"></span>
+                        <p><strong>Clients Satisfaits</strong> <span>qui nous font confiance</span></p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-box-seam"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="3400" data-purecounter-duration="1"
+                              class="purecounter text-brown"></span>
+                        <p><strong>Produits Vendus</strong> <span>au total depuis notre lancement</span></p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-truck"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="2980" data-purecounter-duration="1"
+                              class="purecounter text-brown"></span>
+                        <p><strong>Commandes Livrées</strong> <span>avec succès à nos clients</span></p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-item">
+                        <i class="bi bi-award"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                              class="purecounter text-brown"></span>
+                        <p><strong>Années d’Expérience</strong> <span>dans les soins skincare</span></p>
+                    </div>
+                </div><!-- End Stats Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+        <div class="container">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Nos témoignages</h2>
+                <p> Découvrez ce que nos clients disent de nos soins.</p>
+            </div>
+
+            <div class="testimonial-masonry">
+
+                <div class="testimonial-item" data-aos="fade-up">
+                    <div class="testimonial-content">
+                        <div class="quote-pattern">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Depuis que j'utilise leurs sérums, ma peau n'a jamais été aussi lumineuse et douce. Je
+                            recommande vivement !</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="assets/img/person/person-f-7.webp" alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Rachel Bennett</h3>
+                                <span class="position">Cliente satisfaite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="quote-pattern">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Les crèmes hydratantes ont transformé ma routine beauté. Ma peau est plus souple et éclatante
+                            chaque jour.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="assets/img/person/person-m-7.webp" alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Daniel Morgan</h3>
+                                <span class="position">Client fidèle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="quote-pattern">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Les masques hydratants sont devenus un indispensable dans mon rituel skincare, ma peau est
+                            visiblement plus éclatante.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="assets/img/person/person-f-8.webp" alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Emma Thompson</h3>
+                                <span class="position">Amatrice de soins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <div class="quote-pattern">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>J'adore le sérum anti-âge, ma peau est plus lisse et mes ridules se sont atténuées. Une vraie
+                            révolution !</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="assets/img/person/person-m-8.webp" alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Christopher Lee</h3>
+                                <span class="position">Utilisateur régulier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-content">
+                        <div class="quote-pattern">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>Le gel nettoyant doux a amélioré l’apparence de ma peau. Je me sens rafraîchie et propre sans
+                            irritation.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="assets/img/person/person-f-9.webp" alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Olivia Carter</h3>
+                                <span class="position">Cliente satisfaite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="testimonial-content">
+                        <div class="quote-pattern">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p>J’ai enfin trouvé des produits qui respectent ma peau sensible. Les résultats sont visibles
+                            et durables.</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="assets/img/person/person-m-13.webp" alt="Client">
+                            </div>
+                            <div class="client-details">
+                                <h3>Nathan Brooks</h3>
+                                <span class="position">Utilisateur satisfait</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+</main>
+
+<footer id="footer" class="footer dark-background">
+    <div class="footer-main">
+        <div class="container">
+            <div class="row gy-3 align-items-center">
+                <!-- À propos -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-widget footer-about">
+                        <a href="index.html" class="logo">
+                            <span class="sitename">GlowSkin</span>
+                        </a>
+                        <p>
+                            GlowSkin est une boutique dédiée au bien-être de votre peau.
+                            Nos produits naturels et innovants sont conçus pour révéler votre éclat au quotidien.
+                        </p>
+
+                        <div class="social-links mt-4">
+                            <h5>Suivez-nous</h5>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                                <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="footer-widget">
+                        <h4>Contact</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <span>Douala, Cameroun</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-telephone"></i>
+                                <span>+237 6 80 00 00 00</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-envelope"></i>
+                                <span>contact@glowskin.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-clock"></i>
+                                <span>Lundi - Vendredi : 9h - 18h<br>Samedi : 10h - 16h<br>Dimanche : Fermé</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bas de page -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row gy-3 align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="copyright">
+                        <p>© <span>Copyright</span> <strong class="sitename">GlowSkin</strong>. Tous droits réservés.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+                        <div class="payment-methods">
+                            <div class="payment-icons">
+                                <i class="bi bi-credit-card" aria-label="Carte bancaire"></i>
+                                <i class="bi bi-paypal" aria-label="PayPal"></i>
+                                <i class="bi bi-apple" aria-label="Apple Pay"></i>
+                                <i class="bi bi-google" aria-label="Google Pay"></i>
+                                <i class="bi bi-cash" aria-label="Paiement à la livraison"></i>
+                            </div>
+                        </div>
+
+                        <!--<div class="legal-links">
+                            <a href="tos.html">Conditions</a>
+                            <a href="privacy.html">Confidentialité</a>
+                            <a href="cookies.html">Cookies</a>
+                        </div>-->
+                        <div class="legal-links">
+                            <a href="#">Conditions</a>
+                            <a href="#">Confidentialité</a>
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
